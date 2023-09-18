@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "sass": "node-sass src/sass/main.scss src/css/style.css -w"
   },
   "devDependencies": {
     "node-sass": "^9.0.0",
