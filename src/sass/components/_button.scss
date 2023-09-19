@@ -33,14 +33,17 @@
     }
 
     &--main {
+        border-radius: 3px;
         color: $color-secondary-dark;
         border: .3rem solid $color-secondary-dark;
 
         &::after {
-            outline: solid .2rem rgba($color-secondary-dark, .6);
+            border-radius: 3px;
+            outline: solid .2rem rgba($color-secondary-dark, .4);
         }
 
         &::before {
+            border-radius: 3px;
             outline: solid .2rem rgba($color-secondary-dark, .6);
         }
     }
