@@ -1,0 +1,9 @@
+.header {
+    position: relative;
+    height: 90vh;
+
+    &__text-box {
+        @include absCenter;
+        text-align: center;
+    }
+}
