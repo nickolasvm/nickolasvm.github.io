@@ -18,6 +18,16 @@
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
 *,
 *::after,
 *::before {
@@ -91,6 +101,10 @@ body {
   .btn--main::before {
     border-radius: 3px;
     outline: solid 0.2rem rgba(206, 76, 29, 0.6); }
+
+.btn--animated {
+  animation: moveInBottom .5s ease-out .75s;
+  animation-fill-mode: backwards; }
 
 .btn::before {
   content: "";
