@@ -1,0 +1,48 @@
+.about {
+    &__text-box {
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        margin-right: 10rem;
+
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        -webkit-hyphens: auto;
+        hyphens: auto;
+    }
+
+    &__skill-item {
+        position: relative;
+        text-align: center;
+
+        background: linear-gradient($color-primary-dark, $color-primary-dark) padding-box,
+            linear-gradient(to left top, $color-secondary-dark, $color-primary-light) border-box;
+        border-radius: 1rem;
+        border: .5rem solid transparent;
+
+        &--lateral {
+            margin-top: 3rem;
+        }
+
+        &--middle {
+            &:not(:first-child) {
+                margin-top: 6rem;
+            }
+
+            &:not(:last-child) {
+                margin-bottom: 6rem;
+            }
+        }
+    }
+
+    &__skill-name {
+        text-transform: uppercase;
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    &__img {
+        display: inline-block;
+        height: 6rem;
+        margin: 1rem;
+    }
+}

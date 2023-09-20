@@ -31,3 +31,24 @@ body {
         animation: moveInRight 1s ease-out;
     }
 }
+
+.heading-secondary {
+    letter-spacing: .5rem;
+    margin: 8rem;
+    margin-bottom: 10rem;
+    text-align: center;
+    position: relative;
+    font-size: 6rem;
+    font-weight: 500;
+
+    &::before {
+        position: absolute;
+        content: "";
+        height: 2.5rem;
+        width: 16rem;
+        bottom: 0;
+        left: 48.5%;
+        background-color: $color-secondary-light;
+        z-index: -1;
+    }
+}
