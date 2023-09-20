@@ -15,7 +15,7 @@
 </head>
 
 <body>
-  <header class="header">
+  <header class="header" id="header">
     <div class="header__text-box">
       <h1 class="heading-primary">
         <span class="heading-primary--main">
@@ -26,13 +26,16 @@
         </span>
       </h1>
 
-      <a href="#" class="btn btn--main btn--animated">View my work</a>
+      <a href="#navigation" class="btn btn--main btn--animated">View my work</a>
     </div>
   </header>
 
   <main>
-    <nav class="navigation">
+    <nav class="navigation" id="navigation">
       <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="#header" class="navigation__link">Home</a>
+        </li>
         <li class="navigation__item">
           <a href="#" class="navigation__link">About</a>
         </li>
@@ -40,10 +43,28 @@
           <a href="#" class="navigation__link">Projects</a>
         </li>
         <li class="navigation__item">
-          <a href="#" class="navigation__link">Stacks</a>
+          <a href="#" class="navigation__link">Contact</a>
         </li>
       </ul>
     </nav>
+
+    <section class="about">
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="about__text-box">
+
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="about__stacks">
+
+          </div>
+        </div>
+      </div>
+    </section>
 
   </main>
 
