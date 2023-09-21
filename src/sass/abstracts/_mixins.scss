@@ -13,3 +13,10 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
+
+@mixin gradientBorder {
+    background: linear-gradient($color-primary-dark, $color-primary-dark) padding-box,
+        linear-gradient(to left top, $color-secondary-dark, $color-primary-light) border-box;
+    border-radius: 1rem;
+    border: .5rem solid transparent;
+}

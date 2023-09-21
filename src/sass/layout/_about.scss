@@ -1,15 +1,35 @@
 .about {
-    padding-top: 5rem;
+    padding: 5rem 0;
+
+    &__icon {
+        display: block;
+        font-optical-sizing: auto;
+        text-align: center;
+        letter-spacing: 1px;
+        font-size: 15rem;
+        font-weight: 400;
+        transition: opacity .5s;
+
+        background-image: linear-gradient(to bottom right,
+                $color-secondary-light,
+                $color-grey-dark);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: .6;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
 
     &__text-box {
+        display: block;
+        width: 100%;
+        white-space: pre-line;
         font-size: 2rem;
         margin-bottom: 4rem;
         margin-right: 10rem;
-
-        -moz-hyphens: auto;
-        -ms-hyphens: auto;
-        -webkit-hyphens: auto;
-        hyphens: auto;
     }
 
     &__skills {
@@ -19,36 +39,29 @@
     &__skill-item {
         position: relative;
         text-align: center;
+        margin-bottom: 3rem;
+        transition: all .5s;
 
-        background: linear-gradient($color-primary-dark, $color-primary-dark) padding-box,
-            linear-gradient(to left top, $color-secondary-dark, $color-primary-light) border-box;
-        border-radius: 1rem;
-        border: .5rem solid transparent;
-
-        &--lateral {
-            margin-top: 3rem;
+        &:hover>.about__skill-name {
+            opacity: 1;
         }
 
-        &--middle {
-            &:not(:first-child) {
-                margin-top: 1rem;
-            }
-
-            &:not(:last-child) {
-                margin-bottom: 6rem;
-            }
+        &:hover {
+            transform: scale(1.5);
         }
     }
 
     &__skill-name {
+        margin: 1rem 0;
         text-transform: uppercase;
         font-size: 1.2rem;
-        margin-bottom: 1rem;
+        font-weight: 500;
+        opacity: 0;
+        transition: all .5s;
     }
 
     &__img {
         display: inline-block;
         height: 6rem;
-        margin: 1rem;
     }
 }
