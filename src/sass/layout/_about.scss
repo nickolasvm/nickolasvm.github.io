@@ -10,6 +10,10 @@
         hyphens: auto;
     }
 
+    &__skills {
+        margin-bottom: 10rem;
+    }
+
     &__skill-item {
         position: relative;
         text-align: center;
@@ -25,7 +29,7 @@
 
         &--middle {
             &:not(:first-child) {
-                margin-top: 6rem;
+                margin-top: 1rem;
             }
 
             &:not(:last-child) {
