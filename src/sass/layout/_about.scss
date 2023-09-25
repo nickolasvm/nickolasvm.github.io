@@ -6,8 +6,9 @@
         text-align: center;
         font-size: 10rem;
         font-weight: 400;
+        margin-bottom: 2rem;
         transform: scale(1.4);
-        transition: all .5s;
+        transition: all 1s;
 
         background-image: linear-gradient(to bottom right,
                 $color-secondary-light,
@@ -15,10 +16,11 @@
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
-        opacity: .6;
+        opacity: .5;
 
         &:hover {
             opacity: 1;
+            transform: scale(1.5);
         }
     }
 
@@ -34,6 +36,7 @@
 
     &__text-box {
         display: block;
+        line-height: 3.5rem;
         width: 100%;
         letter-spacing: 1px;
         font-size: 2.5rem;
