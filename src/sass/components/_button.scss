@@ -1,5 +1,4 @@
 .btn {
-
     &,
     &:link,
     &:visited {
@@ -9,7 +8,7 @@
         text-decoration: none;
         display: inline-block;
         cursor: pointer;
-        transition: all .2s;
+        transition: all 0.2s;
         padding: 1.5rem;
         backface-visibility: hidden;
     }
@@ -36,21 +35,21 @@
     &--main {
         border-radius: 3px;
         color: $color-secondary-dark;
-        border: .3rem solid $color-secondary-dark;
+        border: 0.3rem solid $color-secondary-dark;
 
         &::after {
             border-radius: 3px;
-            outline: solid .2rem rgba($color-secondary-dark, .4);
+            outline: solid 0.2rem rgba($color-secondary-dark, 0.4);
         }
 
         &::before {
             border-radius: 3px;
-            outline: solid .2rem rgba($color-secondary-dark, .6);
+            outline: solid 0.2rem rgba($color-secondary-dark, 0.6);
         }
     }
 
     &--animated {
-        animation: moveInBottom .5s ease-out .75s;
+        animation: moveInBottom 0.5s ease-out 0.75s;
         animation-fill-mode: backwards;
     }
 
@@ -63,7 +62,7 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: all .4s;
+        transition: all 0.4s;
     }
 
     &::after {
@@ -75,6 +74,6 @@
         top: 0;
         left: 0;
         z-index: -1;
-        transition: all .4s;
+        transition: all 0.4s;
     }
 }

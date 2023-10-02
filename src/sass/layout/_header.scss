@@ -1,9 +1,12 @@
 .header {
-    position: relative;
+    display: flex;
     height: 100vh;
+    justify-content: center;
+    align-items: center;
 
     &__text-box {
-        @include absCenter;
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
