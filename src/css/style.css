@@ -45,7 +45,7 @@ body {
 
 .container {
   margin: 7rem auto;
-  min-width: 1200px; }
+  max-width: 192rem; }
 
 body {
   font-family: "Roboto", sans-serif;
@@ -74,7 +74,7 @@ body {
 
 .heading-secondary {
   letter-spacing: 0.5rem;
-  margin: 8rem;
+  margin: 5rem;
   margin-bottom: 10rem;
   text-align: center;
   position: relative;
@@ -130,6 +130,9 @@ body {
   .btn--main::before {
     border-radius: 3px;
     outline: solid 0.2rem rgba(206, 76, 29, 0.6); }
+  .btn--main span {
+    margin-left: 3px;
+    font-size: 4rem; }
 
 .btn--animated {
   animation: moveInBottom 0.5s ease-out 0.75s;
@@ -201,21 +204,19 @@ body {
   z-index: 2; }
 
 .about {
-  padding-top: 7rem;
+  padding: 7rem 0;
   margin: 0 15rem; }
   .about__content {
     display: flex;
     justify-content: space-around;
     align-items: center; }
   .about__text {
-    display: flex;
-    flex: 0 0 50%;
-    margin-right: auto; }
+    flex: 0 0 40%; }
   .about__text-box {
     display: block;
     line-height: 3.5rem;
     letter-spacing: 1px;
-    font-size: 2.5rem; }
+    font-size: 2.2rem; }
   .about__skills {
     display: flex; }
   .about__skill-item {

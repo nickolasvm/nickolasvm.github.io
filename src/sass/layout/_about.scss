@@ -1,5 +1,5 @@
 .about {
-    padding-top: 7rem;
+    padding: 7rem 0;
     margin: 0 15rem;
 
     &__content {
@@ -8,38 +8,16 @@
         align-items: center;
     }
 
-    // &__icon {
-    //     display: block;
-    //     text-align: center;
-    //     font-size: 10rem;
-    //     font-weight: 400;
-    //     margin-bottom: 2rem;
-    //     transform: scale(1.4);
-    //     transition: all 1s;
-
-    //     background-image: linear-gradient(to bottom right, $color-secondary-light, $color-grey-dark);
-    //     background-clip: text;
-    //     -webkit-background-clip: text;
-    //     color: transparent;
-    //     opacity: 0.5;
-
-    //     &:hover {
-    //         opacity: 1;
-    //         transform: scale(1.5);
-    //     }
-    // }
-
     &__text {
-        display: flex;
-        flex: 0 0 50%;
-        margin-right: auto;
+        flex: 0 0 40%;
+        // margin-right: auto;
     }
 
     &__text-box {
         display: block;
         line-height: 3.5rem;
         letter-spacing: 1px;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     &__skills {
