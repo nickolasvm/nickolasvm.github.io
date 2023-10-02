@@ -1,17 +1,24 @@
 .footer {
-    padding-bottom: 5rem;
-    margin-top: 5rem;
+    position: relative;
+    margin-top: 8rem;
+    padding: 1rem;
     background-color: $color-primary-dark-2;
 
     &__return-home {
+        position: absolute;
+        top: 2rem;
+        left: 50%;
+        transform: translate(-50%, -50%);
         display: block;
         text-align: center;
     }
 
     &__return-icon {
-        font-size: 6em;
+        width: 4rem;
+        height: 4rem;
         display: inline-block;
         background-color: $color-secondary-dark;
+        fill: $color-grey-light;
         transform: translateY(-2rem);
         transition: all 0.3s;
 
@@ -20,27 +27,15 @@
         }
     }
 
-    &__return-link {
-        &:link,
-        &:visited {
-            text-align: center;
-            text-decoration: none;
-            color: $color-grey-light;
-            transition: all 0.3s;
-        }
-    }
-
     &__socials {
         display: flex;
-        justify-content: space-between;
-        gap: 1px;
+        justify-content: center;
     }
 
     &__link {
-        text-decoration: none;
-
+        margin-top: 3rem;
         &:not(:last-child) {
-            margin-right: 10rem;
+            margin-right: 7rem;
         }
     }
 
@@ -56,7 +51,7 @@
 
     &__copyright {
         text-align: center;
-        margin-top: 5rem;
+        margin-top: 2rem;
         display: block;
         font-size: 1.2rem;
     }

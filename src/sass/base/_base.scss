@@ -17,6 +17,9 @@ body {
 }
 
 .container {
-    margin: 7rem auto;
     max-width: 192rem;
+
+    &:not(:last-child) {
+        margin: 7rem auto;
+    }
 }
