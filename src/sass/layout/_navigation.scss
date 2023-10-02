@@ -1,9 +1,10 @@
 .navigation {
-    position: relative;
+    display: flex;
+    justify-content: flex-end;
     padding: 1rem;
     background-color: $color-primary-light;
     text-align: right;
-    box-shadow: 0 1rem 2rem rgba($color-black, .30);
+    box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
 
     &__list {
         list-style: none;
@@ -14,12 +15,11 @@
         margin: 1rem;
 
         &:last-child {
-            margin-right: 10rem;
+            margin-right: 5rem;
         }
     }
 
     &__link {
-
         &:link,
         &:visited {
             display: inline-block;
@@ -29,12 +29,12 @@
             color: $color-grey-light;
             text-decoration: none;
             text-transform: uppercase;
-            transition: all .3s;
+            transition: all 0.3s;
         }
 
         &:hover,
         &:active {
-            transform: translateY(-.3rem);
+            transform: translateY(-0.3rem);
             color: $color-secondary-dark;
         }
     }

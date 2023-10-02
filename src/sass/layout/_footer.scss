@@ -1,5 +1,4 @@
 .footer {
-    padding: 0 70rem;
     padding-bottom: 5rem;
     margin-top: 5rem;
     background-color: $color-primary-dark-2;
@@ -14,7 +13,7 @@
         display: inline-block;
         background-color: $color-secondary-dark;
         transform: translateY(-2rem);
-        transition: all .3s;
+        transition: all 0.3s;
 
         &:hover {
             transform: translateY(-3rem);
@@ -22,13 +21,12 @@
     }
 
     &__return-link {
-
         &:link,
         &:visited {
             text-align: center;
             text-decoration: none;
             color: $color-grey-light;
-            transition: all .3s;
+            transition: all 0.3s;
         }
     }
 
@@ -49,7 +47,7 @@
     &__icon {
         width: 4rem;
         filter: brightness(0) invert(1);
-        transition: all .4s;
+        transition: all 0.4s;
 
         &:hover {
             transform: scale(1.3);

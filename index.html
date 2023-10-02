@@ -20,22 +20,22 @@
 </head>
 
 <body>
-  <header class="header" id="header">
-    <div class="header__text-box">
-      <h1 class="heading-primary">
-        <span class="heading-primary--main">
-          Hello, I'm <span>Nickolas</span>.
-        </span>
-        <span class="heading-primary--sub">
-          A full stack web developer.
-        </span>
-      </h1>
+  <div class="container">
+    <header class="header" id="header">
+      <div class="header__text-box">
+        <h1 class="heading-primary">
+          <span class="heading-primary--main">
+            Hello, I'm <span>Nickolas</span>.
+          </span>
+          <span class="heading-primary--sub">
+            A full stack web developer.
+          </span>
+        </h1>
 
-      <a href="#about" class="btn btn--main btn--animated">View my work</a>
-    </div>
-  </header>
+        <a href="#about" class="btn btn--main btn--animated">View my work</a>
+      </div>
+    </header>
 
-  <main>
     <nav class="navigation navigation--sticky" id="navigation">
       <ul class="navigation__list">
         <li class="navigation__item">
@@ -48,35 +48,32 @@
           <a href="#projects" class="navigation__link">Projects</a>
         </li>
         <!-- <li class="navigation__item">
-          <a href="#" class="navigation__link">Contact</a>
-        </li> -->
+                    <a href="#" class="navigation__link">Contact</a>
+                  </li> -->
       </ul>
     </nav>
 
-    <section class="about" id="about">
-      <h2 class="heading-secondary">
-        About
-      </h2>
+    <main>
+      <section class="about" id="about">
+        <h2 class="heading-secondary">
+          About
+        </h2>
 
-      <div class="flex__row">
-        <div class="about__text">
-          <i class="about__icon material-icons">
-            person
-          </i>
-          <div class="about__text-box">
-            Nascido em criado em São Bernardo do Campo - SP, sou um desenvolvedor com paixão por tudo relacionado à
-            desenvolvimento web e tecnologia em geral.
-            A combinação única de criatividade, lógica e sempre ter coisas novas para aprender impulsiona meu
-            entusiasmo
-            pelo desenvolvimento web.
-            Quando não estou codando, passo meu tempo me exercitando ou jogando video game.
+        <div class="about__content">
+          <div class="about__text">
+            <!-- TODO incluir icone -->
+            <div class="about__text-box">
+              Nascido em criado em São Bernardo do Campo - SP, sou um desenvolvedor com paixão por tudo relacionado à
+              desenvolvimento web e tecnologia em geral.
+              A combinação única de criatividade, lógica e sempre ter coisas novas para aprender impulsiona meu
+              entusiasmo
+              pelo desenvolvimento web.
+              Quando não estou codando, passo meu tempo me exercitando ou jogando video game.
+            </div>
           </div>
-        </div>
 
-
-        <div class="about__skills">
-          <div class="row">
-            <div class="col-1-of-4">
+          <div class="about__skills">
+            <div class="flex-column">
               <div class="about__skill-item">
                 <img src="src/img/file_type_html_icon_130541.png" alt="HTML Logo" class="about__img">
                 <div class="about__skill-name">HTML</div>
@@ -94,7 +91,7 @@
                 <div class="about__skill-name">Docker</div>
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="flex-column">
               <div class="about__skill-item">
                 <img src="src/img/file_type_css_icon_130661.png" alt="CSS Logo" class="about__img">
                 <div class="about__skill-name">CSS</div>
@@ -112,7 +109,7 @@
                 <div class="about__skill-name">Git</div>
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="flex-column">
               <div class="about__skill-item">
                 <img src="src/img/file_type_sass_icon_130182.png" alt="Sass Logo" class="about__img">
                 <div class="about__skill-name">Sass</div>
@@ -130,7 +127,7 @@
                 <div class="about__skill-name">ESLint</div>
               </div>
             </div>
-            <div class="col-1-of-4">
+            <div class="flex-column">
               <div class="about__skill-item">
                 <img src="src/img/javascript_original_logo_icon_146455.png" alt="Javascript Logo" class="about__img">
                 <div class="about__skill-name">Javascript</div>
@@ -151,124 +148,123 @@
             </div>
           </div>
         </div>
+      </section>
 
+      <section class="projects" id="projects">
+        <h2 class="heading-secondary">
+          Projects
+        </h2>
+
+        <div class="projects__container">
+          <div class="projects__details">
+            <h3 class="heading-tertiary">API Cashback</h3>
+            <p>
+              API para registro de compras e cáulculo automático de cashback dentro do mêrs vigente.
+              Permite cadastro e autenticação de usuários.
+            </p>
+            <ul class="projects__tags">
+              <li class="projects__tag">
+                <span>Typescript</span>
+              </li>
+              <li class="projects__tag">
+                <span>Node.js</span>
+              </li>
+              <li class="projects__tag">
+                <span>MongoDB</span>
+              </li>
+              <li class="projects__tag">
+                <span>Restful API</span>
+              </li>
+            </ul>
+            <a href="https://github.com/nickolasvm/cashback-api" class="projects__link" target="_blank">
+              Learn more
+              <span class="material-icons">
+                north_east
+              </span>
+            </a>
+          </div>
+
+          <div class="projects__details">
+            <h3 class="heading-tertiary">Traduzo</h3>
+            <p>
+              Aplicação de tradução de idiomas feito com deep-translator.
+            </p>
+            <ul class="projects__tags">
+              <li class="projects__tag">
+                <span>Python</span>
+              </li>
+              <li class="projects__tag">
+                <span>Flask</span>
+              </li>
+              <li class="projects__tag">
+                <span>Pymongo</span>
+              </li>
+            </ul>
+            <a href="https://github.com/nickolasvm/app-traduzo" class="projects__link" target="_blank">
+              Learn more
+              <span class="material-icons">
+                north_east
+              </span>
+            </a>
+          </div>
+
+          <div class="projects__details">
+            <h3 class="heading-tertiary">Solar System</h3>
+            <p>
+              Aplicação sobre planetas em nosso sistema solar e missões feitas por astronautas.
+            </p>
+            <ul class="projects__tags">
+              <li class="projects__tag">
+                <span>React</span>
+              </li>
+              <li class="projects__tag">
+                <span>Jest</span>
+              </li>
+              <li class="projects__tag">
+                <span>Javascript</span>
+              </li>
+            </ul>
+            <a href="https://github.com/nickolasvm/solar-system" class="projects__link" target="_blank">
+              Learn more
+              <span class="material-icons">
+                north_east
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__return-home">
+        <a href="#header" class="footer__return-link">
+          <i class="footer__return-icon material-icons">
+            keyboard_double_arrow_up
+          </i>
+        </a>
       </div>
-    </section>
 
-    <section class="projects" id="projects">
-      <h2 class="heading-secondary">
-        Projects
-      </h2>
-
-      <div class="projects__container">
-        <div class="projects__details">
-          <h3 class="heading-tertiary">API Cashback</h3>
-          <p>
-            API para registro de compras e cáulculo automático de cashback dentro do mêrs vigente.
-            Permite cadastro e autenticação de usuários.
-          </p>
-          <ul class="projects__tags">
-            <li class="projects__tag">
-              <span>Typescript</span>
-            </li>
-            <li class="projects__tag">
-              <span>Node.js</span>
-            </li>
-            <li class="projects__tag">
-              <span>MongoDB</span>
-            </li>
-            <li class="projects__tag">
-              <span>Restful API</span>
-            </li>
-          </ul>
-          <a href="https://github.com/nickolasvm/cashback-api" class="projects__link" target="_blank">
-            Learn more
-            <span class="material-icons">
-              north_east
-            </span>
-          </a>
-        </div>
-
-        <div class="projects__details">
-          <h3 class="heading-tertiary">Traduzo</h3>
-          <p>
-            Aplicação de tradução de idiomas feito com deep-translator.
-          </p>
-          <ul class="projects__tags">
-            <li class="projects__tag">
-              <span>Python</span>
-            </li>
-            <li class="projects__tag">
-              <span>Flask</span>
-            </li>
-            <li class="projects__tag">
-              <span>Pymongo</span>
-            </li>
-          </ul>
-          <a href="https://github.com/nickolasvm/app-traduzo" class="projects__link" target="_blank">
-            Learn more
-            <span class="material-icons">
-              north_east
-            </span>
-          </a>
-        </div>
-
-        <div class="projects__details">
-          <h3 class="heading-tertiary">Solar System</h3>
-          <p>
-            Aplicação sobre planetas em nosso sistema solar e missões feitas por astronautas.
-          </p>
-          <ul class="projects__tags">
-            <li class="projects__tag">
-              <span>React</span>
-            </li>
-            <li class="projects__tag">
-              <span>Jest</span>
-            </li>
-            <li class="projects__tag">
-              <span>Javascript</span>
-            </li>
-          </ul>
-          <a href="https://github.com/nickolasvm/solar-system" class="projects__link" target="_blank">
-            Learn more
-            <span class="material-icons">
-              north_east
-            </span>
-          </a>
-        </div>
+      <div class="footer__socials">
+        <a href="https://github.com/nickolasvm" class="footer__link" target="_blank">
+          <img src="src/img/github.png" alt="Github Logo" class="footer__icon">
+        </a>
+        <a href="https://www.linkedin.com/in/nickolas-martinucci/" class="footer__link" target="_blank">
+          <img src="src/img/linkedin.png" alt="LinkedIn Logo" class="footer__icon">
+        </a>
+        <a href="mailto:nickolas64vm@gmail.com" class="footer__link" target="_blank">
+          <img src="src/img/email.png" alt="Email Logo" class="footer__icon">
+        </a>
+        <a href="https://wa.me/5511991349659" class="footer__link" target="_blank">
+          <img src="src/img/whatsapp.png" alt="Whatsapp Logo" class="footer__icon">
+        </a>
       </div>
-    </section>
-  </main>
 
-  <footer class="footer">
-    <div class="footer__return-home">
-      <a href="#header" class="footer__return-link">
-        <i class="footer__return-icon material-icons">
-          keyboard_double_arrow_up
-        </i>
-      </a>
-    </div>
+      <p class="footer__copyright">
+        Nickolas Martinucci ©2023
+      </p>
 
-    <div class="footer__socials">
-      <a href="https://github.com/nickolasvm" class="footer__link" target="_blank">
-        <img src="src/img/github.png" alt="Github Logo" class="footer__icon">
-      </a>
-      <a href="https://www.linkedin.com/in/nickolas-martinucci/" class="footer__link" target="_blank">
-        <img src="src/img/linkedin.png" alt="LinkedIn Logo" class="footer__icon">
-      </a>
-      <a href="mailto:nickolas64vm@gmail.com" class="footer__link" target="_blank">
-        <img src="src/img/email.png" alt="Email Logo" class="footer__icon">
-      </a>
-      <a href="https://wa.me/5511991349659" class="footer__link" target="_blank">
-        <img src="src/img/whatsapp.png" alt="Whatsapp Logo" class="footer__icon">
-      </a>
-    </div>
-
-    <p class="footer__copyright">
-      Nickolas Martinucci ©2023
-    </p>
-
-  </footer>
+    </footer>
+  </div>
 </body>
 
 </html>
