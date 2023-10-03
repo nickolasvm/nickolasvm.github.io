@@ -21,6 +21,10 @@ body {
         & span {
             color: $color-secondary-dark;
         }
+
+        @include respond(phone) {
+            font-size: 9rem;
+        }
     }
 
     &--sub {
@@ -29,6 +33,10 @@ body {
         letter-spacing: 0.5rem;
 
         animation: moveInRight 1s ease-out;
+
+        @include respond(phone) {
+            font-size: 6rem;
+        }
     }
 }
 
@@ -40,6 +48,10 @@ body {
     position: relative;
     font-size: 6rem;
     font-weight: 500;
+
+    @include respond(phone) {
+        font-size: 7rem;
+    }
 
     &::before {
         position: absolute;
@@ -58,4 +70,8 @@ body {
     margin-bottom: 2rem;
     font-size: 4.5rem;
     font-weight: 300;
+
+    @include respond(phone) {
+        font-size: 5rem;
+    }
 }

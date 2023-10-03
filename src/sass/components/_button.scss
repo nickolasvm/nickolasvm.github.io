@@ -11,6 +11,10 @@
         transition: all 0.2s;
         padding: 1.5rem;
         backface-visibility: hidden;
+
+        @include respond(phone) {
+            font-size: 6rem;
+        }
     }
 
     &:hover {

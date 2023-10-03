@@ -2,9 +2,17 @@
     padding: 8rem 0;
     margin: 0 15rem;
 
+    @include respond(phone) {
+        margin-bottom: 10rem;
+    }
+
     &__container {
         display: flex;
         justify-content: space-around;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
     }
 
     &__details {
@@ -21,8 +29,17 @@
         padding: 3rem;
         transition: all 0.5s;
 
+        @include respond(phone) {
+            font-size: 3rem;
+        }
+
         &:not(:last-of-type) {
             margin-right: 5rem;
+
+            @include respond(phone) {
+                margin-right: 0;
+                margin-bottom: 5rem;
+            }
         }
 
         p {
@@ -47,12 +64,29 @@
         font-size: 1.4rem;
         margin-right: 1.5rem;
         padding: 0.8rem;
+
+        @include respond(phone) {
+            margin-top: 2rem;
+            font-size: 3rem;
+        }
     }
 
     &__link {
         text-align: center;
         border-bottom: 1px solid $color-secondary-dark;
-        width: 50%;
+        width: 60%;
+
+        @include respond(tab-land) {
+            width: 70%;
+        }
+
+        @include respond(tab-port) {
+            width: 80%;
+        }
+
+        @include respond(phone) {
+            width: 60%;
+        }
 
         &:link,
         &:visited {
@@ -67,6 +101,10 @@
                 background-position 0.3s,
                 transform 0.3s;
             background-size: 225%;
+
+            @include respond(phone) {
+                font-size: 3rem;
+            }
         }
 
         &:hover,

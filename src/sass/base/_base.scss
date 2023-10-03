@@ -9,6 +9,30 @@
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+
+    @include respond(tab-land) {
+        // width < 1200px?
+        // 1 rem = 9px, 9/16 = 56.25%
+        font-size: 50%;
+    }
+
+    @include respond(tab-port) {
+        // width < 900px?
+        // 1 rem = 8px, 8/16 = 50%
+        font-size: 40%;
+    }
+
+    @include respond(phone) {
+        // width < 400px?
+        // 1 rem = 6px, 6/16 = 56.25%
+        font-size: 25%;
+    }
+
+    @include respond(big-desktop) {
+        // width > 1800px?
+        // 1 rem = 12px, 12/16 = 75%
+        font-size: 62.5%;
+    }
 }
 
 body {
@@ -17,7 +41,8 @@ body {
 }
 
 .container {
-    max-width: 192rem;
+    display: flex;
+    flex-direction: column;
 
     &:not(:last-child) {
         margin: 7rem auto;

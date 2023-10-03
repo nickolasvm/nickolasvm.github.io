@@ -30,6 +30,10 @@
             text-decoration: none;
             text-transform: uppercase;
             transition: all 0.3s;
+
+            @include respond(phone) {
+                font-size: 3rem;
+            }
         }
 
         &:hover,
@@ -45,4 +49,12 @@
     top: 0;
     left: 0;
     z-index: 2;
+}
+
+.contact {
+    display: none;
+
+    @include respond(phone) {
+        display: inline-block;
+    }
 }
