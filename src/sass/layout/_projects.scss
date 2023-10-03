@@ -2,7 +2,13 @@
     padding: 8rem 0;
     margin: 0 15rem;
 
+    @include respond(phone-big) {
+        margin-top: 5rem;
+        margin-bottom: 10rem;
+    }
+
     @include respond(phone) {
+        margin-top: 0;
         margin-bottom: 10rem;
     }
 
@@ -10,7 +16,7 @@
         display: flex;
         justify-content: space-around;
 
-        @include respond(phone) {
+        @include respond(phone-big) {
             flex-direction: column;
         }
     }
@@ -29,14 +35,14 @@
         padding: 3rem;
         transition: all 0.5s;
 
-        @include respond(phone) {
+        @include respond(phone-big) {
             font-size: 3rem;
         }
 
         &:not(:last-of-type) {
             margin-right: 5rem;
 
-            @include respond(phone) {
+            @include respond(phone-big) {
                 margin-right: 0;
                 margin-bottom: 5rem;
             }
@@ -82,6 +88,10 @@
 
         @include respond(tab-port) {
             width: 80%;
+        }
+
+        @include respond(phone-big) {
+            width: 30%;
         }
 
         @include respond(phone) {

@@ -212,6 +212,9 @@ body {
   background-color: #232d41;
   text-align: right;
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3); }
+  @media only screen and (max-width: 37.5em) {
+    .navigation {
+      justify-content: space-around; } }
   .navigation__list {
     list-style: none; }
   .navigation__item {
@@ -219,6 +222,10 @@ body {
     margin: 1rem; }
     .navigation__item:last-child {
       margin-right: 5rem; }
+      @media only screen and (max-width: 37.5em) {
+        .navigation__item:last-child {
+          margin-right: 0;
+          padding: 1rem; } }
   .navigation__link:link, .navigation__link:visited {
     display: inline-block;
     font-size: 2rem;
@@ -228,7 +235,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     transition: all 0.3s; }
-    @media only screen and (max-width: 28em) {
+    @media only screen and (max-width: 37.5em) {
       .navigation__link:link, .navigation__link:visited {
         font-size: 3rem; } }
   .navigation__link:hover, .navigation__link:active {
@@ -243,13 +250,17 @@ body {
 
 .contact {
   display: none; }
-  @media only screen and (max-width: 28em) {
+  @media only screen and (max-width: 37.5em) {
     .contact {
       display: inline-block; } }
 
 .about {
   padding: 8rem 0;
   margin: 0 15rem; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      margin-top: 10rem;
+      margin-bottom: 0; } }
   @media only screen and (max-width: 28em) {
     .about {
       margin-top: 10rem;
@@ -258,13 +269,14 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: center; }
-    @media only screen and (max-width: 28em) {
+    @media only screen and (max-width: 37.5em) {
       .about__content {
         flex-direction: column; } }
   .about__text {
     flex: 0 0 40%; }
-    @media only screen and (max-width: 28em) {
+    @media only screen and (max-width: 37.5em) {
       .about__text {
+        width: 80%;
         margin-bottom: 10rem; } }
   .about__text-box {
     display: block;
@@ -291,6 +303,9 @@ body {
     font-weight: 500;
     opacity: 0;
     transition: all 0.5s; }
+    @media only screen and (max-width: 37.5em) {
+      .about__skill-name {
+        font-size: 1.5rem; } }
     @media only screen and (max-width: 28em) {
       .about__skill-name {
         margin-top: 1.5rem;
@@ -299,6 +314,9 @@ body {
   .about__img {
     display: inline-block;
     height: 6rem; }
+    @media only screen and (max-width: 37.5em) {
+      .about__img {
+        height: 7rem; } }
     @media only screen and (max-width: 28em) {
       .about__img {
         height: 10rem; } }
@@ -306,13 +324,18 @@ body {
 .projects {
   padding: 8rem 0;
   margin: 0 15rem; }
+  @media only screen and (max-width: 37.5em) {
+    .projects {
+      margin-top: 5rem;
+      margin-bottom: 10rem; } }
   @media only screen and (max-width: 28em) {
     .projects {
+      margin-top: 0;
       margin-bottom: 10rem; } }
   .projects__container {
     display: flex;
     justify-content: space-around; }
-    @media only screen and (max-width: 28em) {
+    @media only screen and (max-width: 37.5em) {
       .projects__container {
         flex-direction: column; } }
   .projects__details {
@@ -326,12 +349,12 @@ body {
     border-radius: 25px;
     padding: 3rem;
     transition: all 0.5s; }
-    @media only screen and (max-width: 28em) {
+    @media only screen and (max-width: 37.5em) {
       .projects__details {
         font-size: 3rem; } }
     .projects__details:not(:last-of-type) {
       margin-right: 5rem; }
-      @media only screen and (max-width: 28em) {
+      @media only screen and (max-width: 37.5em) {
         .projects__details:not(:last-of-type) {
           margin-right: 0;
           margin-bottom: 5rem; } }
@@ -364,6 +387,9 @@ body {
     @media only screen and (max-width: 56.25em) {
       .projects__link {
         width: 80%; } }
+    @media only screen and (max-width: 37.5em) {
+      .projects__link {
+        width: 30%; } }
     @media only screen and (max-width: 28em) {
       .projects__link {
         width: 60%; } }

@@ -6,6 +6,10 @@
     text-align: right;
     box-shadow: 0 1rem 2rem rgba($color-black, 0.3);
 
+    @include respond(phone-big) {
+        justify-content: space-around;
+    }
+
     &__list {
         list-style: none;
     }
@@ -16,6 +20,11 @@
 
         &:last-child {
             margin-right: 5rem;
+
+            @include respond(phone-big) {
+                margin-right: 0;
+                padding: 1rem;
+            }
         }
     }
 
@@ -31,7 +40,7 @@
             text-transform: uppercase;
             transition: all 0.3s;
 
-            @include respond(phone) {
+            @include respond(phone-big) {
                 font-size: 3rem;
             }
         }
@@ -54,7 +63,7 @@
 .contact {
     display: none;
 
-    @include respond(phone) {
+    @include respond(phone-big) {
         display: inline-block;
     }
 }
